@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "title": {
+    "text": "States ranked by obesity rate, 2019",
+    "subtitle": "Average of four age groups (%). Hollow dot = 2011 rate."
+  },
+  "width": 560,
+  "height": 420,
+  "data": {
+    "url": "data/state_summary.csv"
+  },
+  "encoding": {
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "y2019",
+        "op": "max",
+        "order": "descending"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#cfcdd6",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "y2011",
+          "type": "quantitative",
+          "title": "% obese"
+        },
+        "x2": {
+          "field": "y2019"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 130,
+        "color": "#c8553d"
+      },
+      "encoding": {
+        "x": {
+          "field": "y2019",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "state"
+          },
+          {
+            "field": "y2011",
+            "title": "2011 (%)"
+          },
+          {
+            "field": "y2015",
+            "title": "2015 (%)"
+          },
+          {
+            "field": "y2019",
+            "title": "2019 (%)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "size": 90,
+        "color": "#6b6a75",
+        "filled": false
+      },
+      "encoding": {
+        "x": {
+          "field": "y2011",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 11,
+        "color": "#2b2a33"
+      },
+      "encoding": {
+        "x": {
+          "field": "y2019",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "y2019",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    }
+  ]
+}

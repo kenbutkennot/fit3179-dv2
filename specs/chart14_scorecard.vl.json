@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "title": {
+    "text": "State scorecard, 2023",
+    "subtitle": "Darker = relatively higher rate among the 16 states (not better or worse in absolute terms). Numbers are % of adults."
+  },
+  "width": 560,
+  "height": 400,
+  "data": {
+    "url": "data/scorecard_long.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "indicator",
+      "type": "nominal",
+      "sort": [
+        "Obesity",
+        "Belly fat (waist)",
+        "Physically inactive",
+        "Sitting 4h+ a day",
+        "Too few fruit and veg",
+        "Too little water",
+        "High blood pressure",
+        "High cholesterol"
+      ],
+      "title": null,
+      "axis": {
+        "orient": "top",
+        "labelAngle": -30,
+        "labelLimit": 160
+      }
+    },
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "obese_sort",
+        "op": "max",
+        "order": "descending"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "white"
+      },
+      "encoding": {
+        "color": {
+          "field": "pct_rank",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ],
+            "range": [
+              "#fdf0d5",
+              "#f4a259",
+              "#c8553d",
+              "#6d1a36"
+            ]
+          },
+          "legend": {
+            "title": "Rank (higher = darker)",
+            "format": ".0%"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state"
+          },
+          {
+            "field": "indicator"
+          },
+          {
+            "field": "value",
+            "title": "%"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10
+      },
+      "encoding": {
+        "text": {
+          "field": "value",
+          "type": "quantitative",
+          "format": ".1f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.pct_rank > 0.55",
+            "value": "white"
+          },
+          "value": "#2b2a33"
+        }
+      }
+    }
+  ]
+}

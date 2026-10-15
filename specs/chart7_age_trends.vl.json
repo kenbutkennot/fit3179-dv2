@@ -1,0 +1,140 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "title": {
+    "text": "Rates by age group, 2011 to 2019",
+    "subtitle": "National adult obesity (%). Women aged 25 to 44 rose fastest."
+  },
+  "data": {
+    "url": "data/obesity_adults.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.state === 'MALAYSIA'"
+    },
+    {
+      "calculate": "toString(datum.year)",
+      "as": "yr"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "sex",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Women",
+        "Men"
+      ]
+    }
+  },
+  "spec": {
+    "width": 300,
+    "height": 240,
+    "layer": [
+      {
+        "mark": {
+          "type": "line",
+          "strokeWidth": 2.5,
+          "point": {
+            "filled": true,
+            "size": 60
+          }
+        },
+        "encoding": {
+          "x": {
+            "field": "yr",
+            "type": "ordinal",
+            "title": null,
+            "axis": {
+              "labelAngle": 0
+            },
+            "scale": {
+              "padding": 0.3
+            }
+          },
+          "y": {
+            "field": "pct",
+            "type": "quantitative",
+            "title": "% obese",
+            "scale": {
+              "domain": [
+                0,
+                32
+              ]
+            }
+          },
+          "color": {
+            "field": "age",
+            "type": "ordinal",
+            "sort": [
+              "18-24",
+              "25-44",
+              "45-64",
+              "65+"
+            ],
+            "scale": {
+              "range": [
+                "#f4a259",
+                "#c8553d",
+                "#6d1a36",
+                "#8e8aa6"
+              ]
+            },
+            "legend": {
+              "title": "Age group"
+            }
+          },
+          "tooltip": [
+            {
+              "field": "age"
+            },
+            {
+              "field": "yr",
+              "title": "Year"
+            },
+            {
+              "field": "pct",
+              "title": "%"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+state,obese_sort,key,value,indicator,pct_rank
+Johor,25.2,obese,25.2,Obesity,0.812
+Kedah,20.1,obese,20.1,Obesity,0.25
+Kelantan,23.4,obese,23.4,Obesity,0.625
+Melaka,25.1,obese,25.1,Obesity,0.75
+Negeri Sembilan,28.9,obese,28.9,Obesity,0.938
+Pahang,21.3,obese,21.3,Obesity,0.375
+Pulau Pinang,22.4,obese,22.4,Obesity,0.5
+Perak,21.4,obese,21.4,Obesity,0.438
+Perlis,32.8,obese,32.8,Obesity,1.0
+Selangor,19.1,obese,19.1,Obesity,0.125
+Terengganu,22.7,obese,22.7,Obesity,0.562
+Sabah,19.5,obese,19.5,Obesity,0.188
+Sarawak,23.6,obese,23.6,Obesity,0.688
+W.P. Kuala Lumpur,18.2,obese,18.2,Obesity,0.062
+W.P. Labuan,20.8,obese,20.8,Obesity,0.312
+W.P. Putrajaya,25.8,obese,25.8,Obesity,0.875
+Johor,25.2,abdominal,53.8,Belly fat (waist),0.438
+Kedah,20.1,abdominal,56.5,Belly fat (waist),0.625
+Kelantan,23.4,abdominal,52.8,Belly fat (waist),0.25
+Melaka,25.1,abdominal,55.0,Belly fat (waist),0.562
+Negeri Sembilan,28.9,abdominal,62.8,Belly fat (waist),0.938
+Pahang,21.3,abdominal,56.7,Belly fat (waist),0.688
+Pulau Pinang,22.4,abdominal,50.9,Belly fat (waist),0.062
+Perak,21.4,abdominal,58.7,Belly fat (waist),0.875
+Perlis,32.8,abdominal,58.6,Belly fat (waist),0.812
+Selangor,19.1,abdominal,53.7,Belly fat (waist),0.375
+Terengganu,22.7,abdominal,57.4,Belly fat (waist),0.75
+Sabah,19.5,abdominal,52.4,Belly fat (waist),0.188
+Sarawak,23.6,abdominal,51.7,Belly fat (waist),0.125
+W.P. Kuala Lumpur,18.2,abdominal,53.3,Belly fat (waist),0.312
+W.P. Labuan,20.8,abdominal,63.8,Belly fat (waist),1.0
+W.P. Putrajaya,25.8,abdominal,54.2,Belly fat (waist),0.5
+Johor,25.2,inactive,36.9,Physically inactive,0.875
+Kedah,20.1,inactive,32.1,Physically inactive,0.688
+Kelantan,23.4,inactive,23.2,Physically inactive,0.375
+Melaka,25.1,inactive,36.6,Physically inactive,0.812
+Negeri Sembilan,28.9,inactive,38.2,Physically inactive,0.938
+Pahang,21.3,inactive,22.7,Physically inactive,0.312
+Pulau Pinang,22.4,inactive,18.5,Physically inactive,0.188
+Perak,21.4,inactive,28.2,Physically inactive,0.5
+Perlis,32.8,inactive,25.2,Physically inactive,0.438
+Selangor,19.1,inactive,38.4,Physically inactive,1.0
+Terengganu,22.7,inactive,21.6,Physically inactive,0.25
+Sabah,19.5,inactive,11.2,Physically inactive,0.094
+Sarawak,23.6,inactive,30.3,Physically inactive,0.562
+W.P. Kuala Lumpur,18.2,inactive,33.5,Physically inactive,0.75
+W.P. Labuan,20.8,inactive,11.2,Physically inactive,0.094
+W.P. Putrajaya,25.8,inactive,31.8,Physically inactive,0.625
+Johor,25.2,sedentary4h,10.7,Sitting 4h+ a day,0.438
+Kedah,20.1,sedentary4h,22.7,Sitting 4h+ a day,0.812
+Kelantan,23.4,sedentary4h,16.0,Sitting 4h+ a day,0.5
+Melaka,25.1,sedentary4h,7.9,Sitting 4h+ a day,0.125
+Negeri Sembilan,28.9,sedentary4h,9.3,Sitting 4h+ a day,0.25
+Pahang,21.3,sedentary4h,19.2,Sitting 4h+ a day,0.656
+Pulau Pinang,22.4,sedentary4h,7.7,Sitting 4h+ a day,0.062
+Perak,21.4,sedentary4h,10.5,Sitting 4h+ a day,0.312
+Perlis,32.8,sedentary4h,10.6,Sitting 4h+ a day,0.375
+Selangor,19.1,sedentary4h,23.7,Sitting 4h+ a day,0.969
+Terengganu,22.7,sedentary4h,23.6,Sitting 4h+ a day,0.875
+Sabah,19.5,sedentary4h,18.9,Sitting 4h+ a day,0.562
+Sarawak,23.6,sedentary4h,19.3,Sitting 4h+ a day,0.75
+W.P. Kuala Lumpur,18.2,sedentary4h,19.2,Sitting 4h+ a day,0.656
+W.P. Labuan,20.8,sedentary4h,8.1,Sitting 4h+ a day,0.188
+W.P. Putrajaya,25.8,sedentary4h,23.7,Sitting 4h+ a day,0.969
+Johor,25.2,inad_fruitveg,91.9,Too few fruit and veg,0.188
+Kedah,20.1,inad_fruitveg,98.3,Too few fruit and veg,0.938
+Kelantan,23.4,inad_fruitveg,93.8,Too few fruit and veg,0.312
+Melaka,25.1,inad_fruitveg,95.6,Too few fruit and veg,0.562
+Negeri Sembilan,28.9,inad_fruitveg,94.8,Too few fruit and veg,0.438
+Pahang,21.3,inad_fruitveg,89.6,Too few fruit and veg,0.062
+Pulau Pinang,22.4,inad_fruitveg,99.9,Too few fruit and veg,1.0
+Perak,21.4,inad_fruitveg,94.9,Too few fruit and veg,0.5
+Perlis,32.8,inad_fruitveg,96.2,Too few fruit and veg,0.625
+Selangor,19.1,inad_fruitveg,97.4,Too few fruit and veg,0.812
+Terengganu,22.7,inad_fruitveg,90.5,Too few fruit and veg,0.125
+Sabah,19.5,inad_fruitveg,92.2,Too few fruit and veg,0.25
+Sarawak,23.6,inad_fruitveg,97.8,Too few fruit and veg,0.875
+W.P. Kuala Lumpur,18.2,inad_fruitveg,94.6,Too few fruit and veg,0.375
+W.P. Labuan,20.8,inad_fruitveg,96.5,Too few fruit and veg,0.688
+W.P. Putrajaya,25.8,inad_fruitveg,97.0,Too few fruit and veg,0.75
+Johor,25.2,water_low,34.1,Too little water,1.0
+Kedah,20.1,water_low,25.3,Too little water,0.562
+Kelantan,23.4,water_low,29.9,Too little water,0.812
+Melaka,25.1,water_low,31.3,Too little water,0.906
+Negeri Sembilan,28.9,water_low,27.9,Too little water,0.688
+Pahang,21.3,water_low,24.2,Too little water,0.438
+Pulau Pinang,22.4,water_low,9.0,Too little water,0.062
+Perak,21.4,water_low,25.1,Too little water,0.5
+Perlis,32.8,water_low,20.2,Too little water,0.375
+Selangor,19.1,water_low,17.7,Too little water,0.312
+Terengganu,22.7,water_low,31.3,Too little water,0.906
+Sabah,19.5,water_low,9.4,Too little water,0.125
+Sarawak,23.6,water_low,27.3,Too little water,0.625
+W.P. Kuala Lumpur,18.2,water_low,17.3,Too little water,0.25
+W.P. Labuan,20.8,water_low,11.0,Too little water,0.188
+W.P. Putrajaya,25.8,water_low,28.8,Too little water,0.75
+Johor,25.2,bp_overall,29.4,High blood pressure,0.562
+Kedah,20.1,bp_overall,28.7,High blood pressure,0.5
+Kelantan,23.4,bp_overall,26.4,High blood pressure,0.312
+Melaka,25.1,bp_overall,30.9,High blood pressure,0.688
+Negeri Sembilan,28.9,bp_overall,20.7,High blood pressure,0.062
+Pahang,21.3,bp_overall,35.1,High blood pressure,0.875
+Pulau Pinang,22.4,bp_overall,31.3,High blood pressure,0.75
+Perak,21.4,bp_overall,31.6,High blood pressure,0.812
+Perlis,32.8,bp_overall,36.9,High blood pressure,1.0
+Selangor,19.1,bp_overall,22.3,High blood pressure,0.188
+Terengganu,22.7,bp_overall,24.0,High blood pressure,0.25
+Sabah,19.5,bp_overall,27.9,High blood pressure,0.438
+Sarawak,23.6,bp_overall,36.8,High blood pressure,0.938
+W.P. Kuala Lumpur,18.2,bp_overall,21.3,High blood pressure,0.125
+W.P. Labuan,20.8,bp_overall,30.0,High blood pressure,0.625
+W.P. Putrajaya,25.8,bp_overall,27.2,High blood pressure,0.375
+Johor,25.2,chol_overall,31.4,High cholesterol,0.312
+Kedah,20.1,chol_overall,34.2,High cholesterol,0.719
+Kelantan,23.4,chol_overall,33.3,High cholesterol,0.469
+Melaka,25.1,chol_overall,33.5,High cholesterol,0.562
+Negeri Sembilan,28.9,chol_overall,23.9,High cholesterol,0.125
+Pahang,21.3,chol_overall,41.8,High cholesterol,1.0
+Pulau Pinang,22.4,chol_overall,34.0,High cholesterol,0.625
+Perak,21.4,chol_overall,33.3,High cholesterol,0.469
+Perlis,32.8,chol_overall,39.0,High cholesterol,0.938
+Selangor,19.1,chol_overall,27.9,High cholesterol,0.188
+Terengganu,22.7,chol_overall,34.2,High cholesterol,0.719
+Sabah,19.5,chol_overall,33.1,High cholesterol,0.375
+Sarawak,23.6,chol_overall,36.1,High cholesterol,0.875
+W.P. Kuala Lumpur,18.2,chol_overall,23.3,High cholesterol,0.062
+W.P. Labuan,20.8,chol_overall,28.0,High cholesterol,0.25
+W.P. Putrajaya,25.8,chol_overall,34.5,High cholesterol,0.812

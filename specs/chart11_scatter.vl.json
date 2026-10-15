@@ -1,0 +1,176 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "title": {
+    "text": "Did low-rate states catch up?",
+    "subtitle": "Each dot is a state. Dots above the line had a higher obesity rate in 2019 than in 2011."
+  },
+  "width": 520,
+  "height": 420,
+  "data": {
+    "url": "data/state_summary.csv"
+  },
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "v": 8
+          },
+          {
+            "v": 26
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "strokeDash": [
+          5,
+          4
+        ],
+        "color": "#9a98a6"
+      },
+      "encoding": {
+        "x": {
+          "field": "v",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              8,
+              26
+            ]
+          }
+        },
+        "y": {
+          "field": "v",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              8,
+              26
+            ]
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 120,
+        "opacity": 0.85
+      },
+      "encoding": {
+        "x": {
+          "field": "y2011",
+          "type": "quantitative",
+          "title": "Obesity rate in 2011 (%)",
+          "scale": {
+            "domain": [
+              8,
+              26
+            ]
+          }
+        },
+        "y": {
+          "field": "y2019",
+          "type": "quantitative",
+          "title": "Obesity rate in 2019 (%)",
+          "scale": {
+            "domain": [
+              8,
+              26
+            ]
+          }
+        },
+        "color": {
+          "field": "change",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              8
+            ],
+            "range": [
+              "#d9d6e3",
+              "#c8553d",
+              "#6d1a36"
+            ]
+          },
+          "legend": {
+            "title": "Rise (points)"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state"
+          },
+          {
+            "field": "y2011",
+            "title": "2011 (%)"
+          },
+          {
+            "field": "y2019",
+            "title": "2019 (%)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 9,
+        "fontSize": 10,
+        "color": "#2b2a33"
+      },
+      "encoding": {
+        "x": {
+          "field": "y2011",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y2019",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "title": {
+    "text": "Young people's habits are worse on every measure",
+    "subtitle": "Share of adults and adolescents with each unhealthy habit, Malaysia, NHMS 2024 (%)"
+  },
+  "width": 560,
+  "height": 260,
+  "data": {
+    "values": [
+      {
+        "habit": "Too few vegetables (under 3 servings)",
+        "group": "Adults",
+        "pct": 88
+      },
+      {
+        "habit": "Too few vegetables (under 3 servings)",
+        "group": "Adolescents",
+        "pct": 95
+      },
+      {
+        "habit": "Too few fruits (under 2 servings)",
+        "group": "Adults",
+        "pct": 83
+      },
+      {
+        "habit": "Too few fruits (under 2 servings)",
+        "group": "Adolescents",
+        "pct": 87
+      },
+      {
+        "habit": "Not physically active",
+        "group": "Adults",
+        "pct": 33
+      },
+      {
+        "habit": "Not physically active",
+        "group": "Adolescents",
+        "pct": 60
+      },
+      {
+        "habit": "Too much fat",
+        "group": "Adults",
+        "pct": 68
+      },
+      {
+        "habit": "Too much fat",
+        "group": "Adolescents",
+        "pct": 75
+      },
+      {
+        "habit": "More than 1 sweet drink a day",
+        "group": "Adults",
+        "pct": 59
+      },
+      {
+        "habit": "More than 1 sweet drink a day",
+        "group": "Adolescents",
+        "pct": 63
+      },
+      {
+        "habit": "Too much free sugar",
+        "group": "Adults",
+        "pct": 50
+      },
+      {
+        "habit": "Too much free sugar",
+        "group": "Adolescents",
+        "pct": 67
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 3,
+        "color": "#cfcdd6"
+      },
+      "encoding": {
+        "y": {
+          "field": "habit",
+          "type": "nominal",
+          "title": null,
+          "sort": [
+            "Too few vegetables (under 3 servings)",
+            "Too few fruits (under 2 servings)",
+            "Not physically active",
+            "Too much fat",
+            "More than 1 sweet drink a day",
+            "Too much free sugar"
+          ],
+          "axis": {
+            "labelLimit": 300
+          }
+        },
+        "x": {
+          "aggregate": "min",
+          "field": "pct",
+          "type": "quantitative"
+        },
+        "x2": {
+          "aggregate": "max",
+          "field": "pct"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 150,
+        "opacity": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "habit",
+          "type": "nominal",
+          "sort": [
+            "Too few vegetables (under 3 servings)",
+            "Too few fruits (under 2 servings)",
+            "Not physically active",
+            "Too much fat",
+            "More than 1 sweet drink a day",
+            "Too much free sugar"
+          ]
+        },
+        "x": {
+          "field": "pct",
+          "type": "quantitative",
+          "title": "% of group",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          }
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Adults",
+              "Adolescents"
+            ],
+            "range": [
+              "#2f6f9f",
+              "#c8553d"
+            ]
+          },
+          "legend": {
+            "title": null
+          }
+        },
+        "tooltip": [
+          {
+            "field": "habit"
+          },
+          {
+            "field": "group"
+          },
+          {
+            "field": "pct",
+            "title": "%"
+          }
+        ]
+      }
+    }
+  ]
+}

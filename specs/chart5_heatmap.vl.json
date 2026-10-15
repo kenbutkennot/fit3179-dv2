@@ -1,0 +1,161 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "title": {
+    "text": "The darkest cells are mostly women aged 25 to 64",
+    "subtitle": "Share of adults with obesity by state and age group, 2019 (%). States sorted by overall average."
+  },
+  "data": {
+    "url": "data/obesity_adults.csv"
+  },
+  "transform": [
+    {
+      "filter": "toNumber(datum.year) === 2019 && datum.state !== 'MALAYSIA'"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "sex",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Women",
+        "Men"
+      ]
+    }
+  },
+  "spec": {
+    "width": 220,
+    "height": 380,
+    "layer": [
+      {
+        "mark": {
+          "type": "rect",
+          "stroke": "white"
+        },
+        "encoding": {
+          "x": {
+            "field": "age",
+            "type": "ordinal",
+            "title": "Age group",
+            "axis": {
+              "labelAngle": 0
+            }
+          },
+          "y": {
+            "field": "state",
+            "type": "nominal",
+            "title": null,
+            "sort": {
+              "field": "pct",
+              "op": "mean",
+              "order": "descending"
+            }
+          },
+          "color": {
+            "field": "pct",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                4,
+                36
+              ],
+              "range": [
+                "#fdf0d5",
+                "#f4a259",
+                "#c8553d",
+                "#6d1a36"
+              ]
+            },
+            "legend": {
+              "title": "% obese"
+            }
+          },
+          "tooltip": [
+            {
+              "field": "state"
+            },
+            {
+              "field": "sex"
+            },
+            {
+              "field": "age"
+            },
+            {
+              "field": "pct",
+              "title": "%"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontSize": 10
+        },
+        "encoding": {
+          "x": {
+            "field": "age",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "state",
+            "type": "nominal",
+            "sort": {
+              "field": "pct",
+              "op": "mean",
+              "order": "descending"
+            }
+          },
+          "text": {
+            "field": "pct",
+            "type": "quantitative",
+            "format": ".0f"
+          },
+          "color": {
+            "condition": {
+              "test": "datum.pct > 20",
+              "value": "white"
+            },
+            "value": "#2b2a33"
+          }
+        }
+      }
+    ]
+  }
+}

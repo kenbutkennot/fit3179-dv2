@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "title": {
+    "text": "Obesity by state, 2023",
+    "subtitle": "Share of adults with a BMI of 30 or more (%). Labuan is shown within Sabah."
+  },
+  "width": 780,
+  "height": 255,
+  "data": {
+    "url": "data/malaysia_states.geojson",
+    "format": {
+      "type": "json",
+      "property": "features"
+    }
+  },
+  "projection": {
+    "type": "mercator",
+    "center": [
+      109.7,
+      3.95
+    ],
+    "scale": 2300,
+    "translate": [
+      390,
+      128
+    ]
+  },
+  "transform": [
+    {
+      "lookup": "properties.state",
+      "from": {
+        "data": {
+          "url": "data/nhms2023_state.csv"
+        },
+        "key": "state",
+        "fields": [
+          "obese",
+          "obese_lo",
+          "obese_hi",
+          "overweight"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.8
+  },
+  "encoding": {
+    "color": {
+      "field": "obese",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          16,
+          34
+        ],
+        "range": [
+          "#fdf0d5",
+          "#f4a259",
+          "#c8553d",
+          "#6d1a36"
+        ]
+      },
+      "legend": {
+        "title": "% obese",
+        "orient": "bottom",
+        "gradientLength": 300
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.state",
+        "title": "State"
+      },
+      {
+        "field": "obese",
+        "title": "Obese (%)"
+      },
+      {
+        "field": "obese_lo",
+        "title": "Likely range, low"
+      },
+      {
+        "field": "obese_hi",
+        "title": "Likely range, high"
+      },
+      {
+        "field": "overweight",
+        "title": "Overweight (%)"
+      }
+    ]
+  }
+}

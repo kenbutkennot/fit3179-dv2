@@ -1,0 +1,164 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "title": {
+    "text": "Do states with more obesity also have worse habits?",
+    "subtitle": "Each dot is a state (2023). Obesity (up) against each habit or health measure (across). Most clouds are loose."
+  },
+  "data": {
+    "url": "data/nhms2023_state.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "inactive",
+        "sedentary4h",
+        "inad_fruitveg",
+        "water_low",
+        "bp_overall",
+        "chol_overall"
+      ],
+      "as": [
+        "ind",
+        "val"
+      ]
+    },
+    {
+      "calculate": "{'inactive': 'Not active enough (%)','sedentary4h': 'Sitting 4h+ a day (%)','inad_fruitveg': 'Too few fruit & veg (%)','water_low': 'Under 6 glasses of water (%)','bp_overall': 'High blood pressure (%)','chol_overall': 'High cholesterol (%)'}[datum.ind]",
+      "as": "label"
+    }
+  ],
+  "facet": {
+    "field": "label",
+    "type": "nominal",
+    "title": null,
+    "sort": [
+      "Not active enough (%)",
+      "Sitting 4h+ a day (%)",
+      "Too few fruit & veg (%)",
+      "Under 6 glasses of water (%)",
+      "High blood pressure (%)",
+      "High cholesterol (%)"
+    ],
+    "header": {
+      "labelFontSize": 11,
+      "labelLimit": 240
+    }
+  },
+  "columns": 3,
+  "spec": {
+    "width": 200,
+    "height": 170,
+    "layer": [
+      {
+        "mark": {
+          "type": "circle",
+          "size": 70,
+          "opacity": 0.8,
+          "color": "#c8553d"
+        },
+        "encoding": {
+          "x": {
+            "field": "val",
+            "type": "quantitative",
+            "scale": {
+              "zero": false
+            },
+            "title": null
+          },
+          "y": {
+            "field": "obese",
+            "type": "quantitative",
+            "title": "% obese",
+            "scale": {
+              "domain": [
+                16,
+                34
+              ]
+            }
+          },
+          "tooltip": [
+            {
+              "field": "state"
+            },
+            {
+              "field": "obese",
+              "title": "Obese (%)"
+            },
+            {
+              "field": "val",
+              "title": "Value (%)"
+            }
+          ]
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.obese > 28"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 6,
+          "fontSize": 9,
+          "color": "#2b2a33"
+        },
+        "encoding": {
+          "x": {
+            "field": "val",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "obese",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "state"
+          }
+        }
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {
+      "x": "independent"
+    }
+  }
+}

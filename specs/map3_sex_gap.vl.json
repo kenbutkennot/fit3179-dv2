@@ -1,0 +1,158 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "title": {
+    "text": "Where women's obesity runs furthest ahead of men's",
+    "subtitle": "Circle size = gap between women and men in 2019 (percentage points). Colour shows who is higher."
+  },
+  "width": 780,
+  "height": 255,
+  "projection": {
+    "type": "mercator",
+    "center": [
+      109.7,
+      3.95
+    ],
+    "scale": 2300,
+    "translate": [
+      390,
+      128
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/malaysia_states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#efeef3",
+        "stroke": "white",
+        "strokeWidth": 0.8
+      }
+    },
+    {
+      "data": {
+        "url": "data/state_summary.csv"
+      },
+      "transform": [
+        {
+          "calculate": "abs(datum.gap19)",
+          "as": "size_gap"
+        },
+        {
+          "calculate": "datum.gap19 > 0 ? 'Women higher' : 'Men higher'",
+          "as": "who"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 0.75,
+        "stroke": "white"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "size_gap",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              20
+            ],
+            "range": [
+              40,
+              1500
+            ]
+          },
+          "legend": {
+            "title": "Gap (points)",
+            "orient": "bottom"
+          }
+        },
+        "color": {
+          "field": "who",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Women higher",
+              "Men higher"
+            ],
+            "range": [
+              "#c8553d",
+              "#2f6f9f"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "Women19",
+            "title": "Women (%)"
+          },
+          {
+            "field": "Men19",
+            "title": "Men (%)"
+          },
+          {
+            "field": "gap19",
+            "title": "Women minus men"
+          }
+        ]
+      }
+    }
+  ]
+}

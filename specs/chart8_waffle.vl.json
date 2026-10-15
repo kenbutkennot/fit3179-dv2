@@ -1,0 +1,1611 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "title": {
+    "text": "What \u201c1 in 4\u201d and \u201c1 in 2\u201d look like",
+    "subtitle": "Each square is 1 person in 100. Left: obesity (BMI 30+). Middle and right: overweight or obese (BMI 25+)."
+  },
+  "data": {
+    "values": [
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 0,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 1,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 2,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 3,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 4,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 5,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 6,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 7,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 8,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 9,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 10,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 11,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 12,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 13,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 14,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 15,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 16,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 17,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 18,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 19,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 20,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 21,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 22,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 23,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 24,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 25,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 26,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 27,
+        "status": "Yes"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 28,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 29,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 30,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 31,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 32,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 33,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 34,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 35,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 36,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 37,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 38,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 39,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 40,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 41,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 42,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 43,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 44,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 45,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 46,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 47,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 48,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 49,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 50,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 51,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 52,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 53,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 54,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 55,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 56,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 57,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 58,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 59,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 60,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 61,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 62,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 63,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 64,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 65,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 66,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 67,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 68,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 69,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 70,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 71,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 72,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 73,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 74,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 75,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 76,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 77,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 78,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 79,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 80,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 81,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 82,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 83,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 84,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 85,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 86,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 87,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 88,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 89,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 90,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 91,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 92,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 93,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 94,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 95,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 96,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 97,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 98,
+        "status": "No"
+      },
+      {
+        "panel": "Women aged 45\u201364|with obesity, 2019",
+        "i": 99,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 0,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 1,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 2,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 3,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 4,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 5,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 6,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 7,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 8,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 9,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 10,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 11,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 12,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 13,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 14,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 15,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 16,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 17,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 18,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 19,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 20,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 21,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 22,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 23,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 24,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 25,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 26,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 27,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 28,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 29,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 30,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 31,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 32,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 33,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 34,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 35,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 36,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 37,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 38,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 39,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 40,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 41,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 42,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 43,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 44,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 45,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 46,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 47,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 48,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 49,
+        "status": "Yes"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 50,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 51,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 52,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 53,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 54,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 55,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 56,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 57,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 58,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 59,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 60,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 61,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 62,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 63,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 64,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 65,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 66,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 67,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 68,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 69,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 70,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 71,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 72,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 73,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 74,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 75,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 76,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 77,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 78,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 79,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 80,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 81,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 82,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 83,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 84,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 85,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 86,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 87,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 88,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 89,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 90,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 91,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 92,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 93,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 94,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 95,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 96,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 97,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 98,
+        "status": "No"
+      },
+      {
+        "panel": "All adults overweight|or obese, 2024",
+        "i": 99,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 0,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 1,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 2,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 3,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 4,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 5,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 6,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 7,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 8,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 9,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 10,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 11,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 12,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 13,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 14,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 15,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 16,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 17,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 18,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 19,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 20,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 21,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 22,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 23,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 24,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 25,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 26,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 27,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 28,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 29,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 30,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 31,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 32,
+        "status": "Yes"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 33,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 34,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 35,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 36,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 37,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 38,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 39,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 40,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 41,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 42,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 43,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 44,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 45,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 46,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 47,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 48,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 49,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 50,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 51,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 52,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 53,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 54,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 55,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 56,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 57,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 58,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 59,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 60,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 61,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 62,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 63,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 64,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 65,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 66,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 67,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 68,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 69,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 70,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 71,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 72,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 73,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 74,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 75,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 76,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 77,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 78,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 79,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 80,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 81,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 82,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 83,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 84,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 85,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 86,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 87,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 88,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 89,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 90,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 91,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 92,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 93,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 94,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 95,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 96,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 97,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 98,
+        "status": "No"
+      },
+      {
+        "panel": "Adolescents overweight|or obese, 2024",
+        "i": 99,
+        "status": "No"
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "floor(datum.i / 10)",
+      "as": "row"
+    },
+    {
+      "calculate": "datum.i % 10",
+      "as": "col"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "panel",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Women aged 45\u201364|with obesity, 2019",
+        "All adults overweight|or obese, 2024",
+        "Adolescents overweight|or obese, 2024"
+      ],
+      "header": {
+        "labelExpr": "split(datum.value,'|')",
+        "labelFontSize": 12
+      }
+    }
+  },
+  "spec": {
+    "width": 160,
+    "height": 160,
+    "mark": {
+      "type": "square",
+      "size": 170
+    },
+    "encoding": {
+      "x": {
+        "field": "col",
+        "type": "ordinal",
+        "axis": null
+      },
+      "y": {
+        "field": "row",
+        "type": "ordinal",
+        "axis": null,
+        "sort": "descending"
+      },
+      "color": {
+        "field": "status",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "Yes",
+            "No"
+          ],
+          "range": [
+            "#c8553d",
+            "#e4e2ea"
+          ]
+        },
+        "legend": {
+          "title": "Affected"
+        }
+      }
+    }
+  }
+}

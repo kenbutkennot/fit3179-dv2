@@ -1,0 +1,202 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "title": {
+      "font": "Fraunces",
+      "fontSize": 16,
+      "anchor": "start",
+      "color": "#2b2a33",
+      "subtitleColor": "#6b6a75",
+      "subtitleFont": "Inter",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75",
+      "domainColor": "#cfcdd6",
+      "tickColor": "#cfcdd6",
+      "gridColor": "#ecebf0"
+    },
+    "legend": {
+      "labelFont": "Inter",
+      "titleFont": "Inter",
+      "labelColor": "#6b6a75",
+      "titleColor": "#6b6a75"
+    },
+    "header": {
+      "labelFont": "Inter",
+      "labelFontSize": 13,
+      "labelColor": "#2b2a33",
+      "titleFont": "Inter"
+    }
+  },
+  "vconcat": [
+    {
+      "title": "Women, 2019",
+      "width": 780,
+      "height": 255,
+      "data": {
+        "url": "data/malaysia_states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "projection": {
+        "type": "mercator",
+        "center": [
+          109.7,
+          3.95
+        ],
+        "scale": 2300,
+        "translate": [
+          390,
+          128
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "properties.state",
+          "from": {
+            "data": {
+              "url": "data/state_summary.csv"
+            },
+            "key": "state",
+            "fields": [
+              "Women19",
+              "Men19"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "color": {
+          "field": "Women19",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              6,
+              30
+            ],
+            "range": [
+              "#fdf0d5",
+              "#f4a259",
+              "#c8553d",
+              "#6d1a36"
+            ]
+          },
+          "legend": {
+            "title": "% obese",
+            "orient": "bottom",
+            "gradientLength": 300
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.state",
+            "title": "State"
+          },
+          {
+            "field": "Women19",
+            "type": "quantitative",
+            "title": "% obese (2019)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Men, 2019",
+      "width": 780,
+      "height": 255,
+      "data": {
+        "url": "data/malaysia_states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "projection": {
+        "type": "mercator",
+        "center": [
+          109.7,
+          3.95
+        ],
+        "scale": 2300,
+        "translate": [
+          390,
+          128
+        ]
+      },
+      "transform": [
+        {
+          "lookup": "properties.state",
+          "from": {
+            "data": {
+              "url": "data/state_summary.csv"
+            },
+            "key": "state",
+            "fields": [
+              "Women19",
+              "Men19"
+            ]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "color": {
+          "field": "Men19",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              6,
+              30
+            ],
+            "range": [
+              "#fdf0d5",
+              "#f4a259",
+              "#c8553d",
+              "#6d1a36"
+            ]
+          },
+          "legend": {
+            "title": "% obese",
+            "orient": "bottom",
+            "gradientLength": 300
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.state",
+            "title": "State"
+          },
+          {
+            "field": "Men19",
+            "type": "quantitative",
+            "title": "% obese (2019)"
+          }
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "shared"
+    }
+  }
+}
