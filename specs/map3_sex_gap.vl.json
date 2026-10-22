@@ -153,6 +153,198 @@
           }
         ]
       }
+    },
+    {
+      "data": {
+        "url": "data/state_summary.csv"
+      },
+      "transform": [
+        {
+          "filter": "indexof(['Perlis','Pulau Pinang','Selangor','Negeri Sembilan','Melaka','W.P. Kuala Lumpur','W.P. Putrajaya'], datum.state) >= 0"
+        },
+        {
+          "calculate": "datum.state === 'Pulau Pinang' ? 'Pulau Pinang' : datum.state",
+          "as": "label"
+        },
+        {
+          "calculate": "106.5",
+          "as": "labelLon"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "stroke": "#6b6a75",
+            "strokeWidth": 1.2,
+            "opacity": 0.8
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "longitude2": {
+              "field": "labelLon"
+            },
+            "latitude2": {
+              "field": "lat"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.state !== 'Selangor' && datum.state !== 'W.P. Kuala Lumpur' && datum.state !== 'W.P. Putrajaya' && datum.state !== 'Negeri Sembilan'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "fontSize": 11,
+            "fontWeight": 600,
+            "color": "#2b2a33"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "labelLon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.state === 'Selangor'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "dy": -12,
+            "fontSize": 11,
+            "fontWeight": 600,
+            "color": "#2b2a33"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "labelLon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.state === 'W.P. Putrajaya'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "dy": 10,
+            "fontSize": 11,
+            "fontWeight": 600,
+            "color": "#2b2a33"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "labelLon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.state === 'W.P. Kuala Lumpur'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "fontSize": 11,
+            "fontWeight": 600,
+            "color": "#2b2a33"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "labelLon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.state === 'Negeri Sembilan'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "dy": 36,
+            "fontSize": 11,
+            "fontWeight": 600,
+            "color": "#2b2a33"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "labelLon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
     }
   ]
 }

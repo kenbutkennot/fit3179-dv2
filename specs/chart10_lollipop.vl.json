@@ -138,6 +138,27 @@
           "format": ".1f"
         }
       }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -9,
+        "dy": 11,
+        "fontSize": 10,
+        "color": "#6b6a75"
+      },
+      "encoding": {
+        "x": {
+          "field": "y2011",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "y2011",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
     }
   ]
 }

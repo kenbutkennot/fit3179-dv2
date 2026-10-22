@@ -151,10 +151,99 @@
       }
     },
     {
+      "transform": [
+        {
+          "filter": "datum.state !== 'Negeri Sembilan' && datum.state !== 'W.P. Putrajaya' && datum.state !== 'Terengganu'"
+        }
+      ],
       "mark": {
         "type": "text",
         "align": "left",
         "dx": 9,
+        "fontSize": 10,
+        "color": "#2b2a33"
+      },
+      "encoding": {
+        "x": {
+          "field": "y2011",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y2019",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.state === 'Terengganu'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -9,
+        "dy": -10,
+        "fontSize": 10,
+        "color": "#2b2a33"
+      },
+      "encoding": {
+        "x": {
+          "field": "y2011",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y2019",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.state === 'Negeri Sembilan'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -9,
+        "dy": -12,
+        "fontSize": 10,
+        "color": "#2b2a33"
+      },
+      "encoding": {
+        "x": {
+          "field": "y2011",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y2019",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "state"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.state === 'W.P. Putrajaya'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 9,
+        "dy": 12,
         "fontSize": 10,
         "color": "#2b2a33"
       },

@@ -18,18 +18,18 @@
   .wrap{max-width:900px;margin:0 auto;padding:0 24px}
   header .wrap{padding:0}
   h1{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:0 0 16px}
-  header p{max-width:620px;font-size:1.15rem;margin:0;color:#f6dfe3}
+  header p{max-width:540px;font-size:1.15rem;margin:0;color:#f6dfe3}
   .byline{margin-top:24px;font-size:.9rem;color:#e7bfc8}
   section{padding:56px 0 8px;border-bottom:1px solid var(--line)}
   h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.8rem;line-height:1.2;margin:0 0 12px}
   .kicker{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:6px}
-  p{max-width:660px;margin:0 0 18px}
+  p{max-width:540px;margin:0 0 18px}
   .chart{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin:24px 0 12px;overflow-x:auto}
-  .note{font-size:.88rem;color:var(--muted);max-width:660px;margin:0 0 32px}
+  .note{font-size:.88rem;color:var(--muted);max-width:540px;margin:0 0 32px}
   .row{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start}
   .row>.chart{flex:1 1 300px}
   .stat{font-family:Fraunces,Georgia,serif;font-size:3rem;font-weight:800;color:var(--accent);line-height:1}
-  .callout{border-left:4px solid var(--accent);padding:4px 0 4px 16px;margin:20px 0;max-width:660px}
+  .callout{border-left:4px solid var(--accent);padding:4px 0 4px 16px;margin:20px 0;max-width:540px}
   footer{padding:48px 0 72px;font-size:.9rem;color:var(--muted)}
   footer h3{font-family:Fraunces,Georgia,serif;color:var(--ink);font-size:1.2rem;margin:24px 0 8px}
   footer li{margin-bottom:6px;max-width:700px}
@@ -39,7 +39,7 @@
 <body>
 <header><div class="wrap">
   <h1>Malaysia's weight problem: who, where and how fast</h1>
-  <p>Adult obesity rose in every Malaysian state between 2011 and 2019. These charts show who and where it affects most, and how everyday habits fit in.</p>
+  <p>Adult obesity rose in every Malaysian state from 2011 to 2019. See where it is highest and how it relates to everyday habits.</p>
   <div class="byline">By Siaw Boon Ken · Monash University Malaysia · FIT3179 Data Visualisation 2 · 14 October 2026</div>
 </div></header>
 
@@ -48,77 +48,77 @@
 <section>
   <div class="kicker">The headline</div>
   <h2>More than one in five Malaysian adults has obesity</h2>
-  <p>In the 2023 national health survey, 21.8% of adults had obesity, and another 32.6% were overweight. Together that is more than half of all adults. Obesity here means a body mass index (BMI) of 30 or more. BMI compares a person's weight with their height. Women are affected more: 26.0% of women compared with 17.9% of men.</p>
-  <p>Earlier surveys let us look closer. In 2019, 28.3% of women aged 45 to 64 were living with obesity. The squares below show what that looks like, next to the overweight-or-obese figures from the 2024 nutrition survey.</p>
+  <p>In 2023, 21.8% of adults had obesity and 32.6% were overweight. Obesity means a body mass index (BMI) of 30 or more. Rates were higher among women (26.0%) than men (17.9%).</p>
+  <p>Earlier surveys show more detail. In 2019, 28.3% of women aged 45 to 64 had obesity. The squares compare this with 2024 figures for adults and adolescents who were overweight or obese.</p>
   <div class="chart" id="v8"></div>
-  <p class="note">Sources: NHMS 2019 (data.gov.my) for the left panel, and NHMS 2024 Nutrition Key Findings for the other two. The 2024 figures are rounded fractions from the survey booklet. Headline figures in the text are from the NHMS 2023 Technical Report.</p>
+  <p class="note">Sources: NHMS 2019 (data.gov.my), NHMS 2024 Nutrition Key Findings and NHMS 2023 Technical Report. The 2024 values are rounded estimates.</p>
 </section>
 
 <section>
   <div class="kicker">Where</div>
   <h2>Women are more affected than men in most states</h2>
-  <p>Darker colours mean a higher share of adults with obesity. The women's map is darker than the men's in 13 of the 15 states and territories shown.</p>
+  <p>Darker colours show higher obesity rates. Women's rates are higher in 13 of the 15 states and territories.</p>
   <div class="chart" id="v1"></div>
-  <p class="note">Each state value is the simple average of four age groups (18–24, 25–44, 45–64 and 65+). It is not weighted by population. W.P. Kuala Lumpur and W.P. Putrajaya are too small to see on this map. Hover over a state for exact values.</p>
+  <p class="note">Values are simple, unweighted averages of four age groups (18–24, 25–44, 45–64 and 65+). W.P. Kuala Lumpur and Putrajaya are too small to see. Hover for exact values.</p>
   <div class="chart" id="v3"></div>
-  <p class="note">Melaka has the biggest gap: 29.8% of women compared with 10.1% of men. W.P. Putrajaya (25.5% of men against 19.1% of women) and Pulau Pinang (14.6% against 14.0%) are the only places where men are higher. Putrajaya's population is small, so its figures can swing more.</p>
+  <p class="note">Melaka has the widest gap (29.8% for women, 10.1% for men). Men have higher rates only in Putrajaya and Pulau Pinang. Putrajaya's small population makes its estimates less stable.</p>
 </section>
 
 <section>
   <div class="kicker">How fast</div>
   <h2>Every state went up, but some much faster</h2>
-  <p>Between 2011 and 2019 the average rate rose in all 15 states and territories. The biggest increases were in Negeri Sembilan and Perak (7.3 percentage points each) and W.P. Putrajaya (7.2). The smallest was in Selangor (0.4).</p>
+  <p>Rates rose in all 15 states and territories from 2011 to 2019. Negeri Sembilan and Perak rose most (7.3 points), followed by Putrajaya (7.2). Selangor rose least (0.4).</p>
   <div class="chart" id="v2"></div>
-  <p class="note">A percentage point is the simple difference between two percentages. For example, going from 15% to 18% is a rise of three percentage points.</p>
-  <p>Perlis had the highest rate in 2011 and has the highest again in 2019, at 23.1%. In between, Putrajaya and Negeri Sembilan overtook it in 2015. Perak climbed from eighth place in 2011 to fourth in 2019.</p>
+  <p class="note">Percentage-point change is the difference between two rates: 15% to 18% is a rise of 3 points.</p>
+  <p>Perlis led in both 2011 and 2019 (23.1%). Putrajaya and Negeri Sembilan briefly overtook it in 2015. Perak rose from eighth to fourth place.</p>
   <div class="chart" id="v4"></div>
   <div class="chart" id="v10"></div>
   <p class="note">Where two states have the same rate, the chart lists them one after the other.</p>
   <div class="chart" id="v11"></div>
-  <p class="note">Sabah and Pulau Pinang still have the lowest rates, but both have risen as well.</p>
+  <p class="note">Sabah and Pulau Pinang still have the lowest rates, though both have risen.</p>
 </section>
 
 <section>
   <div class="kicker">Who</div>
   <h2>Middle-aged women stand out</h2>
-  <p>Nationally, women have higher rates than men in every age group. The difference grows with age: about 4 points among 18 to 24 year olds, and about 14 points among those aged 45 to 64 (28.3% against 14.0%).</p>
+  <p>Women have higher rates in every age group. The gap grows from about 4 points at ages 18–24 to 14 points at ages 45–64 (28.3% vs 14.0%).</p>
   <div class="chart" id="v6"></div>
   <div class="chart" id="v7"></div>
-  <p class="note">Among women, every age group is higher in 2019 than in 2011, with the largest rise among those aged 25 to 44 (from 18.6% to 27.6%). Among men aged 45 to 64, the rate fell between 2015 and 2019.</p>
+  <p class="note">Women's rates rose in every age group from 2011 to 2019, most among those aged 25–44 (18.6% to 27.6%). The rate fell for men aged 45–64 from 2015 to 2019.</p>
   <h3 style="font-family:Fraunces,Georgia,serif;font-weight:600;margin:32px 0 4px">Every state, every age</h3>
   <p>This heatmap breaks every state down by age group.</p>
   <div class="chart" id="v5"></div>
-  <p class="note">Some cells are based on small samples. A few show 0.0% or values below 1% (for example, women aged 65 and over in Putrajaya), which most likely means that very few people were surveyed rather than that nobody had obesity.</p>
+  <p class="note">Some cells use small samples. Values near zero, such as for older women in Putrajaya, likely reflect few people surveyed—not no obesity.</p>
 </section>
 
 <section>
   <div class="kicker">The latest figures</div>
   <h2>Perlis and Negeri Sembilan lead in 2023</h2>
-  <p>The 2023 survey measured people's height and weight in every state. Perlis had the highest obesity rate (32.8%), followed by Negeri Sembilan (28.9%) and W.P. Putrajaya (25.8%). The lowest were W.P. Kuala Lumpur (18.2%), Selangor (19.1%) and Sabah (19.5%).</p>
+  <p>The 2023 survey measured height and weight in every state. Obesity was highest in Perlis (32.8%), Negeri Sembilan (28.9%) and Putrajaya (25.8%). It was lowest in Kuala Lumpur (18.2%), Selangor (19.1%) and Sabah (19.5%).</p>
   <div class="chart" id="v12"></div>
-  <p class="note">Survey results are estimates from a sample, so each state has a margin of error. Hover over a state to see its likely range. Perlis, for example, is between 27.1% and 39.1%. Smaller states have wider ranges. These state values come from the survey report and are not comparable with the earlier maps, which use simple averages of age groups.</p>
-  <p>Looking at the whole country, obesity rose from 15.1% in 2011 to 21.8% in 2023. Overweight, belly fat (a large waist) and a lack of fruit and vegetables also rose.</p>
+  <p class="note">These sample estimates have margins of error. Hover for each likely range; Perlis, for example, is 27.1%–39.1%. Smaller states have wider ranges. These values are not comparable with earlier age-group averages.</p>
+  <p>National obesity rose from 15.1% in 2011 to 21.8% in 2023. Overweight, abdominal obesity and low fruit and vegetable intake also increased.</p>
   <div class="chart" id="v15"></div>
-  <p class="note">Source: NHMS 2023 Technical Report, Tables 4.4.1, 4.5.1 and 4.12.1. Belly fat means a waist of 90 cm or more for men and 80 cm or more for women. "Too few fruit and veg" means fewer than five servings a day.</p>
+  <p class="note">Source: NHMS 2023 Technical Report, Tables 4.4.1, 4.5.1 and 4.12.1. Abdominal obesity is a waist of 90 cm or more for men and 80 cm or more for women. "Too few fruit and veg" means fewer than five servings a day.</p>
 </section>
 
 <section>
   <div class="kicker">What goes with it?</div>
   <h2>Habits matter, but no single habit explains the state differences</h2>
-  <p>It is natural to ask whether states with more obesity also have worse habits. The 2023 survey also measured physical activity, sitting time, diet, water intake, blood pressure and cholesterol. Across the 16 states, the links with obesity are loose. Perlis has the highest obesity rate but lower-than-average inactivity (25.2% against 29.9% nationally), and in almost every state 90% or more of adults eat too few fruit and vegetables, so that habit cannot separate one state from another.</p>
+  <p>The 2023 survey measured activity, sitting, diet, water, blood pressure and cholesterol. Across 16 states, links with obesity are weak. Perlis has the highest obesity but below-average inactivity (25.2% vs 29.9%). Nearly all states report low fruit and vegetable intake, so it does little to distinguish them.</p>
   <div class="chart" id="v13"></div>
-  <p class="note">With only 16 states and sizeable margins of error, these charts can show patterns but not causes. Blood pressure and cholesterol values are age-standardised, so states with different age mixes can be compared fairly. Source: NHMS 2023 Technical Report, Tables 4.2.4, 4.3.6, 4.8.2, 4.8.4, 4.12.3 and 4.12.4.</p>
-  <p>The scorecard puts the measures side by side. Rows that are dark all the way across are states with relatively high rates on many measures at once.</p>
+  <p class="note">With 16 states and wide margins of error, these charts show patterns, not causes. Blood pressure and cholesterol are age-standardised. Source: NHMS 2023 Technical Report, Tables 4.2.4, 4.3.6, 4.8.2, 4.8.4, 4.12.3 and 4.12.4.</p>
+  <p>The scorecard compares each measure. Dark rows show states with higher rates across several measures.</p>
   <div class="chart" id="v14"></div>
-  <p class="note">Colour shows how a state ranks among the 16 states on each measure (0% = lowest rate, 100% = highest). The printed number is the actual percentage. A dark cell means a relatively high rate, which is not always the same as a worse result.</p>
+  <p class="note">Colour ranks each state from lowest (0%) to highest (100%); numbers show actual rates. Darker does not always mean worse.</p>
 </section>
 
 <section>
   <div class="kicker">Young people</div>
   <h2>Young people's habits look worse still</h2>
-  <p>A separate 2024 nutrition survey asked adults and adolescents about the same daily habits. About one in three adults is not physically active. Among adolescents the figure is about three in five. On all six habits shown here, adolescents fare worse than adults.</p>
+  <p>A 2024 survey found about one in three adults and three in five adolescents were inactive. Adolescents did worse on all six habits shown.</p>
   <div class="chart" id="v9"></div>
-  <p class="note">The fruit and vegetable bars show 100% minus the share who met the daily recommendation (2 servings of fruit, 3 of vegetables). "Not physically active" and "free sugar" use rounded fractions from the booklet (1 in 3 and 3 in 5; 1 in 2 and 2 in 3). Free sugar means more than 7.5 teaspoons a day. The 2023 report found that 88% of adults ate too little fruit and 91% too little vegetables, which is slightly worse than the 2024 booklet implies. The two surveys are different, so treat the figures as roughly similar, not exactly comparable. These are national figures, and they do not prove what causes obesity.</p>
+  <p class="note">Fruit and vegetable bars show the share missing the daily recommendation (2 fruit and 3 vegetable servings). Inactivity and free-sugar values are rounded booklet estimates. Free sugar means over 7.5 teaspoons daily. NHMS 2023 reported low fruit intake (88%) and vegetable intake (91%); surveys differ, so figures are approximate and not directly comparable. National figures do not show what causes obesity.</p>
 </section>
 
 </main>
